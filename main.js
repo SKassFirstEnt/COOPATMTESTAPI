@@ -1,4 +1,9 @@
 $(function(){
+	
+	var configKeys = {
+	"googleKey" : "AIzaSyADWrDX-WhlWkVB4fi8BPcpF-FgTi3rmqg",
+	"coopKey" : "PZ3qhqRVPvL9vFV"
+};
 	//google geocode vars
 var url = "https://maps.googleapis.com/maps/api/geocode/json";
 var googleKey = configKeys.googleKey;
