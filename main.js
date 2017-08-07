@@ -1,14 +1,14 @@
 $(function(){
 	//google geocode vars
 var url = "https://maps.googleapis.com/maps/api/geocode/json";
-var googleKey = config.googleKey;
+var googleKey = configKeys.googleKey;
 var params = {"key": googleKey,
 			"address": "1271 Boynton St., Glendale, CA"
 			};
 
 var varHolder = {};
 //COOP vars
-var coopKey = config.coopKey;
+var coopKey = configKeys.coopKey;
 var coopUrl = "http://api.co-opfs.org/locator/proximitySearch";
 var coopParams = {
 					
