@@ -30,6 +30,7 @@ var coopParams = {
 		url: coopUrl,
 		type: "GET",
 		contentType: 'application/json',
+		dataType: 'json',
 		beforeSend: function(xhr){xhr.setRequestHeader("Authorization", coopKey)},
 		data: { "latitude" : varHolder["lat"],
 			   "longitude": varHolder["lng"],
