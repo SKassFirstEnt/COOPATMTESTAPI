@@ -14,7 +14,7 @@ var params = {"key": googleKey,
 var varHolder = {};
 //COOP vars
 var coopKey = configKeys.coopKey;
-var coopUrl = "http://api.co-opfs.org/locator/proximitySearch";
+var coopUrl = "https://api.co-opfs.org/locator/proximitySearch";
 var coopParams = {
 					
 				 };
