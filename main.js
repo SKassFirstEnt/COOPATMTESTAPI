@@ -25,14 +25,14 @@ var coopParams = {
 				 varHolder["lat"] = val.geometry.location.lat;
 				 varHolder["lng"] = val.geometry.location.lng; 	
 				});
-					
+	
 			$.ajax({
 		url: coopUrl,
 		type: "GET",
 		contentType: 'text/plain',
 		//dataType: 'jsonp',
 		crossDomain: true,
-		xhrFields:{withCredentials: false},
+		xhrFields:{withCredentials: true},
 		headers: {"Authorization": coopKey},
 		data: { "latitude" : varHolder["lat"],
 			   "longitude": varHolder["lng"],
