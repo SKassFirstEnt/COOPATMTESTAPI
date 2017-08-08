@@ -29,11 +29,10 @@ var coopParams = {
 			$.ajax({
 		url: coopUrl,
 		type: "GET",
-		contentType: 'text/plain',
+		contentType: 'application/json',
 		//dataType: 'jsonp',
-		crossDomain: true,
-		xhrFields:{withCredentials: true},
-		headers: {"Authorization": coopKey},
+		
+		headers: {"Authorization": coopKey, "Version": 1, "Accept": "application/json"},
 		data: { "latitude" : varHolder["lat"],
 			   "longitude": varHolder["lng"],
 			   "loctype": "A"},
