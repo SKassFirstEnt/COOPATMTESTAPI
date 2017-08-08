@@ -1,9 +1,6 @@
 $(function(){
 	
-	var configKeys = {
-	"googleKey" : "AIzaSyADWrDX-WhlWkVB4fi8BPcpF-FgTi3rmqg",
-	"coopKey" : "PZ3qhqRVPvL9vFV"
-};
+	
 	//google geocode vars
 var url = "https://maps.googleapis.com/maps/api/geocode/json";
 var googleKey = configKeys.googleKey;
@@ -25,14 +22,12 @@ var coopParams = {
 				 varHolder["lat"] = val.geometry.location.lat;
 				 varHolder["lng"] = val.geometry.location.lng; 	
 				});
-			console.log(varHolder["lat"] );
-			console.log(varHolder["lng"]);
+		
 			$.ajax({
 		url: coopUrl,
 		type: "GET",
-		contentType: 'application/json',
+		//contentType: 'application/json',
 		//dataType: 'jsonp',
-		
 		headers: {"Authorization": coopKey, "Version": 1, "Accept": "application/json"},
 		data: { "latitude" : varHolder["lat"],
 			   "longitude": varHolder["lng"],
