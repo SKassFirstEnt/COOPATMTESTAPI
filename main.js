@@ -25,7 +25,8 @@ var coopParams = {
 				 varHolder["lat"] = val.geometry.location.lat;
 				 varHolder["lng"] = val.geometry.location.lng; 	
 				});
-	
+			console.log(varHolder["lat"] );
+			console.log(varHolder["lng"]);
 			$.ajax({
 		url: coopUrl,
 		type: "GET",
